@@ -1,6 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
+const services = [
+  {
+    title: "Cinematic Weddings",
+    description: "Premium cinematic shoots with artistic excellence."
+  },
+  {
+    title: "Pre-Wedding",
+    description: "Romantic pre-wedding storytelling with cinematic feel."
+  },
+  {
+    title: "Maternity",
+    description: "Beautiful maternity moments captured with elegance."
+  },
+  {
+    title: "Portraits",
+    description: "Creative portrait photography with artistic lighting."
+  },
+  {
+    title: "Corporate",
+    description: "Professional corporate photography solutions."
+  }
+];
 
 export default function Home() {
   return (
@@ -36,6 +58,7 @@ export default function Home() {
             <a href="#contact" className="hover:text-yellow-400">Contact</a>
           </div>
         </motion.nav>
+        
 
         {/* HOME */}
         <section
@@ -78,40 +101,42 @@ export default function Home() {
           </p>
         </motion.section>
 
-       {/* SERVICES */}
-        <motion.section
-          id="services"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ staggerChildren: 0.2 }}
-          className="py-24 text-center px-6"
-        >
-          <h2 className="text-4xl font-bold text-yellow-500 mb-12">
-            Our Services
-          </h2>
+     {/* SERVICES */}
+<motion.section
+  id="services"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.3 }}
+  transition={{ staggerChildren: 0.2 }}
+  className="py-24 text-center px-6"
+>
+  <h2 className="text-4xl font-bold text-yellow-500 mb-16">
+    Our Services
+  </h2>
 
-          <div className="grid md:grid-cols-3 gap-10">
-            {["cinematic Weddings", "Pre-Wedding","meternity", "potraits","corporate"].map((service, index) => (
-              <motion.div
-                key={index}
-                variants={{
-                  hidden: { opacity: 0, y: 80 },
-                  visible: { opacity: 1, y: 0 },
-                }}
-                whileHover={{ scale: 1.08 }}
-                className="bg-black/60 border border-yellow-500 p-8 rounded-2xl hover:shadow-yellow-500/40 shadow-lg"
-              >
-                <h3 className="text-2xl font-bold mb-4 text-yellow-400">
-                  {service}
-                </h3>
-                <p className="text-gray-300">
-                  Premium cinematic shoots with artistic excellence.
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
+  <div className="grid md:grid-cols-3 gap-10">
+    {services.map((service, index) => (
+      <motion.div
+        key={index}
+        variants={{
+          hidden: { opacity: 0, y: 80 },
+          visible: { opacity: 1, y: 0 }
+        }}
+        whileHover={{ scale: 1.05 }}
+        className="bg-black/60 border border-yellow-500 p-8 rounded-2xl 
+                   hover:shadow-yellow-500/40 shadow-lg transition duration-300"
+      >
+        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
+          {service.title}
+        </h3>
+
+        <p className="text-gray-300">
+          {service.description}
+        </p>
+      </motion.div>
+    ))}
+  </div>
+</motion.section>
 {/* GALLERY */}
 <section
   id="gallery"
@@ -195,7 +220,7 @@ export default function Home() {
         >
           <h2 className="text-4xl font-bold text-yellow-500 mb-6">Contact</h2>
           <p className="text-gray-300 mb-2">📞 +91 9966880989</p>
-          <p className="text-gray-300 mb-2">📧 raghuveerphotography@gmail.com</p>
+          <p className="text-gray-300 mb-2">📧 raghuveerphotography786@gmail.com</p>
           <p className="text-gray-300">
             📍 Kataram, Hanamkonda, Hyderabad, Telangana
           </p>
