@@ -5,10 +5,11 @@ const cormorant = Cormorant_SC({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
 });
+
 export const metadata = {
-  verification: {
-    google: "Gn8du1nZDsuSZsy7ujV-2rRhdiyTp4N2lfNEevoUcOE",
-  },
+  title: "Raghuveer Photography | Cinematic Wedding Photographer in Hanamkonda, Hyderabad",
+  description:
+    "6 years of professional photography experience. Specialised in Cinematic Weddings, Pre-Wedding, Maternity Shoots, Portraits & Corporate Photography.",
 };
 export default function RootLayout({
   children,

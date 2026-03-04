@@ -38,7 +38,8 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/40 backdrop-brightness-110"></div>
 
       <div className="relative z-10">
-
+<h1>Professional Cinematic Wedding Photographer in Hanamkonda, Hyderabad</h1>
+<p>6 Years of Experience in Weddings, Pre-Wedding, Maternity, Portrait & Corporate Photography.</p>
         {/* NAVBAR */}
         <motion.nav
           initial={{ y: -80 }}
@@ -46,7 +47,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 px-10 py-4 flex justify-between items-center border-b border-yellow-600"
         >
-          <h1 className="text-2xl font-bold text-yellow-500">
+          <h1 className="text-1xl font-bold text-yellow-500">
             Raghuveer
           </h1>
 
@@ -140,14 +141,14 @@ export default function Home() {
 {/* GALLERY */}
 <section
   id="gallery"
-  className="py-24 text-center px-6 bg-black/60 relative z-50"
+  className="py-24 text-center px-6 bg-black/60 relative"
 >
   <h2 className="text-4xl font-bold text-yellow-500 mb-12">
     Gallery
   </h2>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    {Array.from({ length: 21 }, (_, i) => `g${i + 1}.jpeg`).map((img, i) => {
+    {Array.from({ length: 17 }, (_, i) => `g${i + 1}.jpeg`).map((img, i) => {
       const isFourBySix = i < 14; // images 1–14
 
       return (
