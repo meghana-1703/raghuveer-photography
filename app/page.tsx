@@ -38,8 +38,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/40 backdrop-brightness-110"></div>
 
       <div className="relative z-10">
-<h1>Professional Cinematic Wedding Photographer in Hanamkonda, Hyderabad</h1>
-<p>6 Years of Experience in Weddings, Pre-Wedding, Maternity, Portrait & Corporate Photography.</p>
+
         {/* NAVBAR */}
         <motion.nav
           initial={{ y: -80 }}
