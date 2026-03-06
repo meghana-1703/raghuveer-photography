@@ -38,7 +38,8 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/40 backdrop-brightness-110"></div>
 
       <div className="relative z-10">
-
+<h1>Professional Cinematic Wedding Photographer in Hanamkonda, Hyderabad</h1>
+<p>6 Years of Experience in Weddings, Pre-Wedding, Maternity, Portrait & Corporate Photography.</p>
         {/* NAVBAR */}
         <motion.nav
           initial={{ y: -80 }}
@@ -46,11 +47,11 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 px-10 py-4 flex justify-between items-center border-b border-yellow-600"
         >
-          <h1 className="text-1xl font-bold text-yellow-500">
-            Raghuveer
-          </h1>
+         <h1 className="text-yellow-500 font-bold text-xl mr-4">
+  Raghuveer
+</h1>
 
-          <div className="space-x-6 text-sm md:text-base">
+          <div className="flex">
             <a href="#home" className="hover:text-yellow-400">Home</a>
             <a href="#about" className="hover:text-yellow-400">About</a>
             <a href="#services" className="hover:text-yellow-400">Services</a>
