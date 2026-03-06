@@ -38,8 +38,6 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/40 backdrop-brightness-110"></div>
 
       <div className="relative z-10">
-<h1>Professional Cinematic Wedding Photographer in Hanamkonda, Hyderabad</h1>
-<p>6 Years of Experience in Weddings, Pre-Wedding, Maternity, Portrait & Corporate Photography.</p>
         {/* NAVBAR */}
         <motion.nav
           initial={{ y: -80 }}
@@ -47,51 +45,44 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 px-10 py-4 flex justify-between items-center border-b border-yellow-600"
         >
-         <h1 className="text-yellow-500 font-bold text-xl mr-4">
-  Raghuveer
-</h1>
+          <h1 className="text-1xl font-bold text-yellow-500">
+            Raghuveer
+          </h1>
 
-          <div className="flex">
-            <a href="#home" className="hover:text-yellow-400">Home</a>
-            <a href="#about" className="hover:text-yellow-400">About</a>
-            <a href="#services" className="hover:text-yellow-400">Services</a>
-            <a href="#gallery" className="hover:text-yellow-400">Gallery</a>
-            <a href="#contact" className="hover:text-yellow-400">Contact</a>
-          </div>
+        <div className="flex text-white gap-6 md:gap-10">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</div>
         </motion.nav>
         
 
-        {/* HOME */}
         <section
-    
-          id="home"
-          className="h-screen flex flex-col items-center justify-center text-center px-6"
-        >
-          <motion.h1
-  initial={{ opacity: 0, y: 80 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1 }}
- className="text-5xl md:text-7xl font-extrabold font-playfair text-yellow-500 mb-6 tracking-wide drop-shadow-xl"
+  id="home"
+  className="h-screen flex flex-col items-center justify-center text-center px-6"
 >
-  Raghuveer Photography
-</motion.h1>
+  <motion.h1
+    initial={{ opacity: 0, y: 80 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="text-5xl md:text-7xl font-extrabold font-playfair text-yellow-500 mb-6 tracking-wide drop-shadow-xl"
+  >
+    Raghuveer Photography
+  </motion.h1>
+
+  <p className="text-xl md:text-2xl text-gray-200">
+    Turning Moments into Timeless Memories✨
+  </p>
+</section>
 
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="text-xl md:text-2xl text-gray-200"
-          >
-            Turning Moments into Timeless Memories✨
-          </motion.p>
-        </section>
         
-
         {/* ABOUT */}
         <motion.section
           id="about"
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="py-24 text-center px-6 bg-black/60 backdrop-blur-sm"
