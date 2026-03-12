@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 
 import { motion } from "framer-motion";
 const services = [
@@ -25,6 +26,7 @@ const services = [
 ];
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <main
       className="text-white scroll-smooth bg-cover bg-center bg-fixed relative"
@@ -39,6 +41,15 @@ export default function Home() {
 
       <div className="relative z-10">
         {/* NAVBAR */}
+        {menuOpen && (
+<div className="md:hidden flex flex-col items-center bg-black text-white gap-6 py-6">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+)}
         <motion.nav
           initial={{ y: -80 }}
           animate={{ y: 0 }}
@@ -48,6 +59,12 @@ export default function Home() {
           <h1 className="text-1g font-bold text-yellow-500 mr-6">
             Raghuveer
           </h1>
+          <button
+className="text-white text-2xl md:hidden"
+onClick={() => setMenuOpen(!menuOpen)}
+> 
+☰
+</button>
 
         <div className="flex text-white gap-8 md:gap-10 text-sm md:text-base">
   <a href="#home">Home</a>
@@ -61,6 +78,7 @@ export default function Home() {
 
         <section
   id="home"
+  
   className="h-screen flex flex-col items-center justify-center text-center px-6"
 >
   <motion.h1
