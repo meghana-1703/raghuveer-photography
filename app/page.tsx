@@ -42,7 +42,7 @@ export default function Home() {
       <div className="relative z-10">
         {/* NAVBAR */}
         {menuOpen && (
-<div className="md:hidden flex text-white gap-6 md:gap-10">
+<div className="md:hidden flex flex-col items-center bg-black text-white gap-6 py-6">
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#services">Services</a>
@@ -56,9 +56,6 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 px-4 md:px-10 py-4 flex justify-between items-center border-b border-yellow-600"
         >
-          <h1 className="text-1g font-bold text-yellow-500 mr-6">
-            Raghuveer
-          </h1>
           <button
 className="text-white text-2xl md:hidden"
 onClick={() => setMenuOpen(!menuOpen)}
@@ -66,11 +63,15 @@ onClick={() => setMenuOpen(!menuOpen)}
 ☰
 </button>
 <button
-className="text-white text-2xl md:hidden"
+className="text-white text-2xl mr -4 md:hidden"
 onClick={() => setMenuOpen(!menuOpen)}
 >
 ☰
 </button>
+          <h1 className="text-1g font-bold text-yellow-500 mr-6">
+            Raghuveer
+          </h1>
+        
 
         <div className="flex text-white gap-8 md:gap-10 text-sm md:text-base">
   <a href="#home">Home</a>
