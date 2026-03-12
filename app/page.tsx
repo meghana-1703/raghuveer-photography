@@ -54,11 +54,11 @@ export default function Home() {
           initial={{ y: -80 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.8 }}
-          className="fixed top-0 w-full bg-black/70 backdrop-blur-md  flex items-center justify-between px-4 py-3z"
+          className="fixed top-0 w-full bg-black/70 backdrop-blur-md  flex items-center justify-between px-4"
         >
           
 <button
-className="text-white text-2xl mr -4 md:hidden"
+className="text-white text-2xl md:hidden"
 onClick={() => setMenuOpen(!menuOpen)}
 >
 ☰
