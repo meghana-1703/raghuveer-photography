@@ -60,7 +60,6 @@ export default function Home() {
 className="text-white text-2xl md:hidden"
 onClick={() => setMenuOpen(!menuOpen)}
 > 
-☰
 </button>
 <button
 className="text-white text-2xl mr -4 md:hidden"
