@@ -42,7 +42,7 @@ export default function Home() {
       <div className="relative z-10">
         {/* NAVBAR */}
         {menuOpen && (
-<div className="md:hidden flex flex-col items-center bg-black text-white gap-6 py-6">
+<div className="md:hidden flex text-white gap-6 md:gap-10">
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#services">Services</a>
@@ -63,6 +63,12 @@ export default function Home() {
 className="text-white text-2xl md:hidden"
 onClick={() => setMenuOpen(!menuOpen)}
 > 
+☰
+</button>
+<button
+className="text-white text-2xl md:hidden"
+onClick={() => setMenuOpen(!menuOpen)}
+>
 ☰
 </button>
 
