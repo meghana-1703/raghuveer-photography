@@ -45,11 +45,11 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 px-4 md:px-10 py-4 flex justify-between items-center border-b border-yellow-600"
         >
-          <h1 className="text-1xl font-bold text-yellow-500">
+          <h1 className="text-1g font-bold text-yellow-500 mr-6">
             Raghuveer
           </h1>
 
-        <div className="flex text-white gap-4 md:gap-10 text-sm md:text-base">
+        <div className="flex text-white gap-8 md:gap-10 text-sm md:text-base">
   <a href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#services">Services</a>
