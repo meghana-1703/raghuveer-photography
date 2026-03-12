@@ -1,5 +1,8 @@
 import "./globals.css";
 import { Cormorant_SC } from "next/font/google";
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
 const cormorant = Cormorant_SC({
   subsets: ["latin"],

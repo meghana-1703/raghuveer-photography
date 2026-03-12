@@ -43,13 +43,13 @@ export default function Home() {
           initial={{ y: -80 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.8 }}
-          className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 px-10 py-4 flex justify-between items-center border-b border-yellow-600"
+          className="fixed top-0 w-full bg-black/70 backdrop-blur-md z-50 px-4 md:px-10 py-4 flex justify-between items-center border-b border-yellow-600"
         >
           <h1 className="text-1xl font-bold text-yellow-500">
             Raghuveer
           </h1>
 
-        <div className="flex text-white gap-6 md:gap-10">
+        <div className="flex text-white gap-4 md:gap-10 text-sm md:text-base">
   <a href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#services">Services</a>
@@ -67,7 +67,7 @@ export default function Home() {
     initial={{ opacity: 0, y: 80 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
-    className="text-5xl md:text-7xl font-extrabold font-playfair text-yellow-500 mb-6 tracking-wide drop-shadow-xl"
+    className="text-4xl sm:text-5xl md:text-7xl font-extrabold font-playfair text-yellow-500 mb-6"
   >
     Raghuveer Photography
   </motion.h1>
@@ -85,7 +85,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="py-24 text-center px-6 bg-black/60 backdrop-blur-sm"
+          className="py-20 text-center px-4 md:px-10 bg-black/60 backdrop-blur-sm"
         >
           <h2 className="text-4xl font-bold text-yellow-500 mb-6">About Us</h2>
           <p className="max-w-3xl mx-auto text-gray-300 text-lg">
@@ -100,7 +100,7 @@ export default function Home() {
   whileInView="visible"
   viewport={{ once: true, amount: 0.3 }}
   transition={{ staggerChildren: 0.2 }}
-  className="py-24 text-center px-6"
+  className="py-20 text-center px-4 md:px-10"
 >
   <h2 className="text-4xl font-bold text-yellow-500 mb-16">
     Our Services
@@ -132,7 +132,7 @@ export default function Home() {
 {/* GALLERY */}
 <section
   id="gallery"
-  className="py-24 text-center px-6 bg-black/60 relative"
+  className="py-20 text-center px-4 md:px-10 bg-black/60 relative"
 >
   <h2 className="text-4xl font-bold text-yellow-500 mb-12">
     Gallery
@@ -208,7 +208,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="py-24 text-center px-6 bg-black/70"
+          className="py-20 text-center px-4 md:px-10 bg-black/70"
         >
           <h2 className="text-4xl font-bold text-yellow-500 mb-6">Contact</h2>
           <p className="text-gray-300 mb-2">📞 +91 9966880989</p>
