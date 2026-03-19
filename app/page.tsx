@@ -145,8 +145,8 @@ export default function Home() {
   </h2>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    {Array.from({ length: 17 }, (_, i) => `g${i + 1}.jpeg`).map((img, i) => {
-      const isFourBySix = i < 14; // images 1–14
+    {Array.from({ length: 15 }, (_, i) => `g${i + 1}.jpeg`).map((img, i) => {
+      const isFourBySix = i < 12; // images 1–12
 
       return (
         <div
